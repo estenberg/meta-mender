@@ -1,0 +1,8 @@
+[Unit]
+Description=Blink LED2
+
+[Service]
+ExecStart=/sbin/blinkenlights.sh
+
+[Install]
+WantedBy=multi-user.target
