@@ -1,5 +1,5 @@
 PACKAGECONFIG_append = " networkd resolved"
-RDEPENDS_append = " bash"
+RDEPENDS_${PN}_append = " bash"
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
