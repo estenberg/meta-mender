@@ -2,7 +2,7 @@
 Description=Blink LED2
 
 [Service]
-ExecStart=/sbin/blinkenlights.sh
+ExecStart=/usr/sbin/blinkenlights.sh
 
 [Install]
 WantedBy=multi-user.target
