@@ -4,6 +4,7 @@ RDEPENDS_${PN}_append = " bash"
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
 SYSTEMD_AUTO_ENABLE ?= "enable"
+SYSTEMD_SERVICE_${PN} = "blinkenlights.service"
 
 SRC_URI += " \
     file://eth.network \
