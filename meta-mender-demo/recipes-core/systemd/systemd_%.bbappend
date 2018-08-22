@@ -29,8 +29,8 @@ do_install_append() {
         install -m 0755 ${WORKDIR}/enp.network ${D}${sysconfdir}/systemd/network
   fi
 
-  install -d ${D}${sysconfdir}/systemd/system
-  install -m 0755 ${WORKDIR}/blinkenlights.service ${D}${sysconfdir}/systemd/system
+  install -d ${D}/${systemd_unitdir}/system
+  install -m 0644 ${WORKDIR}/blinkenlights.service ${D}/${systemd_unitdir}/system
 
   install -d ${D}${sbindir}
   install -m 0755 ${WORKDIR}/blinkenlights.sh ${D}${sbindir}
